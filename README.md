@@ -5,9 +5,9 @@ PyGotham 2018 talk about Banking Blunders and Concurrency Challenges in Django
 
 ---
 
-<center>
+<div style="text-align:center">
 <img src="https://pirate.github.io/django-concurrency-talk/slides.jpg/slides.001.jpeg" alt="First slide of talk" width="500px">
-</center>
+</div>
 
 [**PyGotham Talk Page**](https://2018.pygotham.org/talks/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges/)  
 `#pygotham2018` `#python` `#django` `#distributed-systems` `#concurrency` `#databases`

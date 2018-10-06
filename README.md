@@ -1,7 +1,8 @@
-# django-concurrency-talk
+# Talk: How I Learned to Stop Worrying and Love atomic(): Banking Blunders and Concurrency Challenges
 
-My Pygotham 2018 talk titled: How to Stop Worrying and Love atomic(), Banking Blunders &amp; Concurrency Challenges
+#pygotham2018 #python #django #distributed-systems #concurrency #databases
 
+(sorry for the overused "how I learned..." title)
 
 https://2018.pygotham.org/talks/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges/
 

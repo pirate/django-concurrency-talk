@@ -3,11 +3,11 @@
 
 ---
 
+https://2018.pygotham.org/talks/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges/
+
 `#pygotham2018` `#python` `#django` `#distributed-systems` `#concurrency` `#databases`
 
 (sorry for the overused "how I learned..." title)
-
-https://2018.pygotham.org/talks/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges/
 
 ## Video
 

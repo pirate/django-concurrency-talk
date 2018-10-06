@@ -18,7 +18,7 @@ https://2018.pygotham.org/talks/how-i-learned-to-stop-worrying-and-love-atomic-b
 You can view the slides as:
 
  - [PDF](./slides.pdf)
- - [Images](./slides.001.jpeg)
+ - [Images](./slides.jpg/slides.001.jpeg)
  - [HTML](./slides.html)
 
 ## **Further Reading**

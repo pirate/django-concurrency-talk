@@ -1,4 +1,5 @@
-# Talk: How I Learned to Stop Worrying and Love atomic(): Banking Blunders and Concurrency Challenges
+# Talk: How I Learned to Stop Worrying and Love atomic()
+*Banking Blunders and Concurrency Challenges*
 
 #pygotham2018 #python #django #distributed-systems #concurrency #databases
 

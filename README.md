@@ -1,7 +1,7 @@
 # How I Learned to Stop Worrying and Love atomic()
 PyGotham 2018 talk about Banking Blunders and Concurrency Challenges in Django
 
-[Nick Sweeting](https://nicksweeting.com) | [@theSquashSH](https://twitter.com/theSquashSH) on Twitter | [@pirate](https://github.com/pirate) on Github | Co-Founder/CTO @ [Monadical](https://monadical.com) building [OddSlingers Poker](https://labs.oddslingers.com)
+[Nick Sweeting](https://nicksweeting.com) | [@theSquashSH](https://twitter.com/theSquashSH) on Twitter | [@pirate](https://github.com/pirate) on Github | [LinkedIn](https://www.linkedin.com/in/nick-sweeting-430999b3/) | Co-Founder/CTO @ [Monadical](https://monadical.com) building [OddSlingers Poker](https://labs.oddslingers.com)
 
 ---
 

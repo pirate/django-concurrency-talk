@@ -22,11 +22,13 @@ PyGotham 2018 talk about Banking Blunders and Concurrency Challenges in Django
 
 ## Slides
 
-You can view the slides as:
+You can view the slides here:
 
  - [PDF](./slides.pdf)
  - [Images](./slides.jpg/slides.001.jpeg)
  - [HTML](./slides.html)
+ - [SlideShare](https://www.slideshare.net/NickSweeting1/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-concurrency-challenges)
+ - [SpeakerDeck](https://speakerdeck.com/pirate/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges)
 
 
 ## Overview

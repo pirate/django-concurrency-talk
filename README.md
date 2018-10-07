@@ -28,7 +28,27 @@ You can view the slides as:
  - [Images](./slides.jpg/slides.001.jpeg)
  - [HTML](./slides.html)
 
-## **Further Reading**
+
+## Overview
+
+What do Superman III, Hackers, and Office Space all have in common? Find out in this talk, along with some concurrency, database integrity, and financial data safety fundamentals. This is a technical talk going over the core principles in database integrity and data safety, it assumes familiarity with the Django ORM.
+
+## Description
+
+Did you know every Django app already behaves like a distributed system, even when it’s running only on one server? In this talk I’ll go over some of the distributed systems & database fundamentals that you’ll neeed to understand when building a Python project that handles sensitive data. We’ll focus on intermediate and advanced usage of the Django ORM, but many of the concepts apply equally well to SQLAlchemy and other Python ORMs.
+
+We’ll go over:
+
+ - how to use append-only logs to order events across your system
+ - the meaning of transaction isolation levels
+ - how and when to use atomic compare-and-swap operations
+ - type safety for currencies
+ - new distributed-SQL databases like spanner, TiDB, and Cockroachdb
+ - transaction lifecycles when doing async processing with django-channels
+
+We spent the last two years building an online [poker engine](https://labs.oddslingers.com/whitepaper.html) based on Django + channels, and we have plenty of stories about our failures and discoveries to share along the way. Come learn about all the ways it’s possible to screw up when handling sensitive data, and how to avoid them!
+
+## Further Reading
 
 * Articles
     - [https://labs.oddslingers.com/posts/Designing-A-Banking-System.html](https://labs.oddslingers.com/posts/Designing-A-Banking-System.html)

@@ -82,6 +82,7 @@ Gap locking only works on columns that are indexed (all columns must be indexed 
 
 * Articles
     - [https://labs.oddslingers.com/posts/Designing-A-Banking-System.html](https://labs.oddslingers.com/posts/Designing-A-Banking-System.html)
+    - [https://medium.com/@hakibenita/how-to-manage-concurrency-in-django-models-b240fed4ee2](https://medium.com/@hakibenita/how-to-manage-concurrency-in-django-models-b240fed4ee2)
     - [https://blogs.oracle.com/oraclemagazine/on-transaction-isolation-levels](https://blogs.oracle.com/oraclemagazine/on-transaction-isolation-levels)
     - [https://jepsen.io/consistency](https://jepsen.io/consistency)
     - [https://medium.com/abrai/demystifying-consistency-and-isolation-for-a-distributed-systems-engineer-64a064c52f6e](https://medium.com/abrai/demystifying-consistency-and-isolation-for-a-distributed-systems-engineer-64a064c52f6e)

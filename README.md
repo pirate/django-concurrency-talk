@@ -42,10 +42,13 @@ Did you know every Django app already behaves like a distributed system, even wh
 
 We’ll go over:
 
- - how to use append-only logs to order events across your system
+ - how to use immutable append-only logs to order events across your system (log-structured storage)
+ - the importance of accurate timestamps, and why that's difficult in distributed systems
  - the meaning of transaction isolation levels
- - how and when to use atomic compare-and-swap operations
- - type safety for currencies
+ - how and when to use locking (pessimistic concurrency)
+ - how and when to use atomic compare-and-swaps (optimistic concurrency)
+ - how and when to use a hybrid optimistic/pessimistic approach like MVCC
+ - type safety for currencies, and math operations to avoid
  - new distributed-SQL databases like spanner, TiDB, and Cockroachdb
  - transaction lifecycles when doing async processing with django-channels
 

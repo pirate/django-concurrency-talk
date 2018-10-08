@@ -50,6 +50,28 @@ We’ll go over:
 
 We spent the last two years building an online [poker engine](https://labs.oddslingers.com/whitepaper.html) based on Django + channels, and we have plenty of stories about our failures and discoveries to share along the way. Come learn about all the ways it’s possible to screw up when handling sensitive data, and how to avoid them!
 
+## Notes
+
+One thing I didn't cover in the talk is that SQL can do something called "[gap locking](https://www.percona.com/blog/2012/03/27/innodbs-gap-locks/)".  That is if you have an index for a given column, and you perform a `.select_for_update()` with a filter, it won't just lock the rows that match the filter, it will actually prevent any new rows from being added that match the filter while the lock is held, which lets you effectively lock append-only tables without needing to lock the entire table.
+
+Example:
+
+```python
+class BalanceTransfer(models.Model):
+    src = models.ForeignKey(User)
+    dst = models.ForeignKey(User)
+    amt = models.DecimalField(max_digits=20, decimal_places=2)
+    timestamp = models.DateTimeField(auto_now_add=True)
+
+...
+with transaction.atomic():
+    lock = BalanceTransfer.objects.select_for_update().filter(Q(src=user) | Q(dst=user))
+    ...
+    # no new rows can be added matching Q(src=user) | Q(dst=user) during this time
+    # meaning we can safely do some logic without a user's balance being changed by new transfers added to the table
+    withdraw(user, 5000)
+```
+
 ## Further Reading
 
 * Articles

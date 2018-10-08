@@ -1,6 +1,6 @@
 # How I Learned to Stop Worrying and Love atomic() <br/>*Banking Blunders and Concurrency Challenges*
 
-**PyGotham 2018 Talk about how to deal with concurrency, money, and log-structured data in the Django ORM**
+**How to deal with concurrency, money, and log-structured data in the Django ORM**
 
 [Nick Sweeting](https://nicksweeting.com) | [@theSquashSH](https://twitter.com/theSquashSH) on Twitter | [@pirate](https://github.com/pirate) on Github | [LinkedIn](https://www.linkedin.com/in/nick-sweeting-430999b3/) | Co-Founder/CTO @ [Monadical](https://monadical.com) building [OddSlingers Poker](https://labs.oddslingers.com)
 

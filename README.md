@@ -72,6 +72,8 @@ with transaction.atomic():
     withdraw(user, 5000)
 ```
 
+Gap locking only works on columns that are indexed (all columns must be indexed together for the query you're tring to lock).  By default, all django ForeignKey columns are indexed, so you only need to worry about that if you want to gap lock a field like `CharField`, `DecimalField`, `DateTimeField`, etc.
+
 ## Further Reading
 
 * Articles

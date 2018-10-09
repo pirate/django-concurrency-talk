@@ -58,6 +58,8 @@ We spent the last two years building an online [poker engine](https://labs.oddsl
 
 One thing I didn't cover in the talk is that SQL can do something called "[gap locking](https://www.percona.com/blog/2012/03/27/innodbs-gap-locks/)".  That is if you have an index for a given column, and you perform a `.select_for_update()` with a filter, it won't just lock the rows that match the filter, it will actually prevent any new rows from being added that match the filter while the lock is held, which lets you effectively lock append-only tables without needing to lock the entire table.
 
+(Thanks to Sam Kimbrel for telling me about this feature in the hall after the talk)
+
 Example:
 
 ```python

@@ -19,7 +19,7 @@
 
 ## Video
 
-(coming soon)
+https://www.youtube.com/watch?v=VJSznZMvA1M
 
 ## Slides
 

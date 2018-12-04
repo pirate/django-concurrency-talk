@@ -8,7 +8,7 @@
 
 <div style="text-align:center">
     <a href="https://pirate.github.io/django-concurrency-talk/slides.pdf">
-        <img src="https://pirate.github.io/django-concurrency-talk/slides.jpg/slides.001.jpeg" alt="First slide of talk" width="500px">
+        <img src="https://i.imgur.com/Cm6Q2zX.jpg" alt="First slide of talk" width="500px">
      </a>
 </div>
 
@@ -19,7 +19,7 @@
 
 ## Video
 
-https://www.youtube.com/watch?v=VJSznZMvA1M
+[Watch the PyGotham 2018 talk video on YouTube](https://www.youtube.com/watch?v=VJSznZMvA1M)
 
 ## Slides
 

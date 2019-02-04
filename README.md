@@ -41,7 +41,7 @@ Contact me on Twiter [@theSquashSH](https://twitter.com/theSquashSH) for correct
 
 ## Overview
 
-What do Superman III, Hackers, and Office Space all have in common? Find out in this talk, along with some concurrency, database integrity, and financial data safety fundamentals. This is a technical talk going over the core principles in database integrity and data safety, it assumes familiarity with the Django ORM.
+What do the plots of Superman III, Hackers, I love you Philip Morris, and Office Space all have in common? Find out in this talk, along with some concurrency, database integrity, and financial data safety fundamentals. This is a technical talk going over the core principles in database integrity and data safety, it assumes familiarity with the Django ORM.
 
 ## Description
 

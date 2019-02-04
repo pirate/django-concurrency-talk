@@ -16,12 +16,15 @@
 
 (sorry for the overused "how I learned..." title)
 
-## Video
+## Events
 
-- [**PyCon Colombia 2019 Talk Page**](https://www.pycon.co/en/talks/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges/)  
+- [**PyCon Colombia 2019**](https://www.pycon.co/en/talks/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges/)  
   Video: Coming soon...
 
-- [**PyGotham NYC 2018 Talk Page**](https://2018.pygotham.org/talks/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges/)  
+- [**Django-NYC & Python-NYC Talk Night @ thelab 2018/10/25**](https://www.meetup.com/nycpython/events/255468112/)  
+  Video: None available.
+
+- [**PyGotham NYC 2018**](https://2018.pygotham.org/talks/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges/)  
   Video: https://www.youtube.com/watch?v=VJSznZMvA1M
 
 ## Slides

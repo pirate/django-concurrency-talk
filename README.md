@@ -67,7 +67,25 @@ We’ll go over:
 
 We spent the last two years building an online [poker engine](https://labs.oddslingers.com/whitepaper.html) based on Django + channels, and we have plenty of stories about our failures and discoveries to share along the way. Come learn about all the ways it’s possible to screw up when handling sensitive data, and how to avoid them!
 
-## Notes
+This is half overview of distributed systems fundamentals, half tales of our adventures at OddSlingers designing a django-channels backend to power an online poker platform. We’ll cover some common financial data pitfalls, get into some more advanced nuances of transactions, and discuss what modern “next generation distributed SQL” databases like CockroachDB and TiDB do, and how it all ties into to building a globally distributed apps. We’ll also cover the benefits of log-structured data and how it makes reasoning about stateful systems easier.
+
+Did you know every Django app is already a distributed system, even when it’s running only on one server? Have you heard of .select_for_update() and transaction.atomic()? Did you know that even when using them, there are at least 3 different ways you can encounter DB consistency bugs? Come learn about all the ways it’s possible to screw up when handling sensitive data, and how to avoid them!
+
+## Background
+
+This talk expects a basic familiarity with the Django ORM, but doesn’t require that people know about transactions, atomicity, distributed SQL, or any of the other nitty-gritty details. I’m going to be giving many examples to illustrate each bug, and talk about the real-world effects. I expect beginners and advanced Django users will all learn at least 1 new thing in this talk, but it’s primarily aimed at intermediate developers who are new to thinking about modeling concurrency and distributed systems.
+
+I’ve previously given lighting talks and spoken publicly about a wide range of technical topics at meetups in NYC, SF, Medellin, and Shanghai. I’m giving this talk as the CTO of Monadical (https://monadical.com), where we do real-time poker (and side-betting, on the blockchain, woo buzzwords!). We’ve learned tons of lessons over the last two years working with django, django-channels, React/Redux, and sensitive financial data, and we hope to share plenty of fun stories about the poker world, and about building real-time systems in django!
+
+I gave this talk at PyGotham 2018 recently, but I’ve since added significant improvements and new slides after speaking with several advanced Django users in the audience.
+
+## Speaker Bio
+
+I dropped out of high school in Shanghai to start coding, and have been founding and working at startups in San Francisco, Portland, Montreal, and NYC ever since.  I've been working with Django since my first under-the-table gig for a Shanghainese food-delivery startup, but have carried those skills with me from the healthcare and agriculture industries, to now the online gaming and blockchain worlds by cofounding a poker startup in Medellín called OddSlingers.  I love making mistakes and asking stupid questions, it's the best way to learn!
+
+I also love learning about distributed systems and doing security activism, you may have heard of me as the "Equifax guy" who made the NYTimes for creating a hoax phishing site that Equifax accidentally linked millions of customers to.
+
+## Addendum
 
 One thing I didn't cover in the talk is that SQL can do something called "[gap locking](https://www.percona.com/blog/2012/03/27/innodbs-gap-locks/)".  That is if you have an index for a given column, and you perform a `.select_for_update()` with a filter, it won't just lock the rows that match the filter, it will actually prevent any new rows from being added that match the filter while the lock is held, which lets you effectively lock append-only tables without needing to lock the entire table.
 

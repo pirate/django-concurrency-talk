@@ -9,7 +9,7 @@ Monadical works on archiving the internet and making Esports more engaging by bu
 
 <a href="https://www.youtube.com/watch?v=VJSznZMvA1M"><img src="https://img.shields.io/badge/Watch-YouTube-red.svg?style=flat"/></a>
 <a href="https://twitter.com/thesquashSH"><img src="https://img.shields.io/badge/Tweet-%40theSquashSH-lightblue.svg?style=flat"/></a>
-<a href="https://github.com/pirate/django-conurrency-talk"><img src="https://img.shields.io/github/stars/pirate/django-concurrency-talk.svg?style=flat&label=Star+on+Github"/></a>
+<a href="https://github.com/pirate/django-concurrency-talk"><img src="https://img.shields.io/github/stars/pirate/django-concurrency-talk.svg?style=flat&label=Star+on+Github"/></a>
 
 ---
 

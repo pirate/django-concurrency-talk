@@ -12,20 +12,17 @@
      </a>
 </div>
 
-[**PyCon Colombia 2019 Talk Page**]]https://www.pycon.co/en/talks/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges/)
-
-[**PyGotham NYC 2018 Talk Page**](https://2018.pygotham.org/talks/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges/)  
-
 `#pyconco2019` `#pygotham2018` `#python` `#django` `#distributed-systems` `#concurrency` `#databases`
 
 (sorry for the overused "how I learned..." title)
 
 ## Video
 
-Watch the talk videos on YouTube:
+- [**PyCon Colombia 2019 Talk Page**]]https://www.pycon.co/en/talks/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges/)
+  Video: Coming soon...
 
-- PyCon Colombia 2019 (coming soon...)
-- [PyGotham NYC 2018](https://www.youtube.com/watch?v=VJSznZMvA1M)
+- [**PyGotham NYC 2018 Talk Page**](https://2018.pygotham.org/talks/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges/)
+  Video: https://www.youtube.com/watch?v=VJSznZMvA1M
 
 ## Slides
 

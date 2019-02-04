@@ -18,13 +18,13 @@
 
 ## Events
 
-- [**PyCon Colombia 2019**](https://www.pycon.co/en/talks/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges/)  
+- [**PyCon Colombia 2019**](https://www.pycon.co/en/talks/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges/) @ Pontifical Xavierian University on 2019/04/08  
   Video: Coming soon...
 
-- [**Django-NYC & Python-NYC Talk Night @ thelab 2018/10/25**](https://www.meetup.com/nycpython/events/255468112/)  
+- [**Django-NYC & Python-NYC Talk Night**](https://www.meetup.com/nycpython/events/255468112/) @ thelab NYC on 2018/10/25  
   Video: None available.
 
-- [**PyGotham NYC 2018**](https://2018.pygotham.org/talks/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges/)  
+- [**PyGotham NYC 2018**](https://2018.pygotham.org/talks/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges/) @ Hotel Pennsylvania NYC on 2018/10/06  
   Video: https://www.youtube.com/watch?v=VJSznZMvA1M
 
 ## Slides

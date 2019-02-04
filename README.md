@@ -18,10 +18,10 @@
 
 ## Video
 
-- [**PyCon Colombia 2019 Talk Page**](https://www.pycon.co/en/talks/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges/)
+- [**PyCon Colombia 2019 Talk Page**](https://www.pycon.co/en/talks/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges/)  
   Video: Coming soon...
 
-- [**PyGotham NYC 2018 Talk Page**](https://2018.pygotham.org/talks/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges/)
+- [**PyGotham NYC 2018 Talk Page**](https://2018.pygotham.org/talks/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges/)  
   Video: https://www.youtube.com/watch?v=VJSznZMvA1M
 
 ## Slides

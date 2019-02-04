@@ -1,4 +1,4 @@
-# Database Integrity in Django: Safely Handling Critical Data in Distibuted Systems
+# Database Integrity in Django: Safely Handling Critical Data in Distributed Systems
 
 *AKA: How I Learned to Stop Worrying and Love atomic(): Banking Blunders and Concurrency Challenges*  
 **How to deal with concurrency, money, and log-structured data in the Django ORM**

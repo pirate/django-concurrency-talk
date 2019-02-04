@@ -4,7 +4,8 @@
 **How to deal with concurrency, money, and log-structured data in the Django ORM**
 
 Speaker Info: [Nick Sweeting](https://nicksweeting.com) | [@theSquashSH](https://twitter.com/theSquashSH) on Twitter | [@pirate](https://github.com/pirate) on Github | [LinkedIn](https://www.linkedin.com/in/nick-sweeting-430999b3/)  
-Co-Founder/CTO @ [Monadical](https://monadical.com), a startup based in Medellin, Colombia and Montreal, Canada.  Monadical works on archiving the internet and making Esports more engaging by building [OddSlingers Poker](https://labs.oddslingers.com).
+Co-Founder/CTO @ [Monadical](https://monadical.com), a startup based in Medellin, Colombia and Montreal, Canada.  
+Monadical works on archiving the internet and making Esports more engaging by building [OddSlingers Poker](https://labs.oddslingers.com).
 
 <a href="https://www.youtube.com/watch?v=VJSznZMvA1M"><img src="https://img.shields.io/badge/Watch-YouTube-red.svg?style=flat"/></a>
 <a href="https://twitter.com/thesquashSH"><img src="https://img.shields.io/badge/Tweet-%40theSquashSH-lightblue.svg?style=flat"/></a>

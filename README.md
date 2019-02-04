@@ -4,6 +4,7 @@
 
 [Nick Sweeting](https://nicksweeting.com) | [@theSquashSH](https://twitter.com/theSquashSH) on Twitter | [@pirate](https://github.com/pirate) on Github | [LinkedIn](https://www.linkedin.com/in/nick-sweeting-430999b3/) | Co-Founder/CTO @ [Monadical](https://monadical.com) building [OddSlingers Poker](https://labs.oddslingers.com)
 
+<a href="https://www.youtube.com/watch?v=VJSznZMvA1M"><img src="https://img.shields.io/badge/Watch-%40YouTube-red.svg?style=flat"/></a>
 <a href="https://twitter.com/thesquashSH"><img src="https://img.shields.io/badge/Tweet-%40theSquashSH-blue.svg?style=flat"/></a>
 <a href="https://github.com/pirate/django-conurrency-talk"><img src="https://img.shields.io/github/stars/pirate/django-concurrency-talk.svg?style=flat&label=Star+on+Github"/></a>
 

@@ -34,6 +34,8 @@ Co-Founder/CTO @ Monadical, a startup based in Medellin, Colombia and Montreal, 
 - [**PyGotham NYC 2018**](https://2018.pygotham.org/talks/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges/) @ Hotel Pennsylvania NYC on 2018/10/06  
   Video: https://www.youtube.com/watch?v=VJSznZMvA1M
 
+If you'd like to have me give this talk at one of your events, please reach out via Twitter or email!
+
 ## Slides
 
 You can view the slides in several formats, though some may be more up-to-date than others:

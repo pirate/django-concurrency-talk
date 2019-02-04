@@ -114,6 +114,8 @@ Gap locking only works on columns that are indexed (all columns must be indexed 
 
 ## Further Reading
 
+If you want to learn more about Django, databases, concurrency and data integrity, check out these talks and articles that go into more depth.
+
 * Articles
     - [https://labs.oddslingers.com/posts/Designing-A-Banking-System.html](https://labs.oddslingers.com/posts/Designing-A-Banking-System.html)
     - [https://medium.com/@hakibenita/how-to-manage-concurrency-in-django-models-b240fed4ee2](https://medium.com/@hakibenita/how-to-manage-concurrency-in-django-models-b240fed4ee2)

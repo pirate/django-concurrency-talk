@@ -23,7 +23,7 @@ Monadical works on archiving the internet and making Esports more engaging by bu
 
 (sorry for the overused "how I learned..." title)
 
-## Events
+## Events & Video
 
 - [**PyCon Colombia 2019**](https://www.pycon.co/en/talks/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges/) @ Pontifical Xavierian University on 2019/04/08  
   Video: Coming soon...

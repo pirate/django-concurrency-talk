@@ -1,5 +1,6 @@
-# How I Learned to Stop Worrying and Love atomic() <br/>*Banking Blunders and Concurrency Challenges*
+# Database Integrity in Django: Safely Handling Critical Data in Distibuted Systems
 
+*AKA: How I Learned to Stop Worrying and Love atomic(): Banking Blunders and Concurrency Challenges*  
 **How to deal with concurrency, money, and log-structured data in the Django ORM**
 
 [Nick Sweeting](https://nicksweeting.com) | [@theSquashSH](https://twitter.com/theSquashSH) on Twitter | [@pirate](https://github.com/pirate) on Github | [LinkedIn](https://www.linkedin.com/in/nick-sweeting-430999b3/) | Co-Founder/CTO @ [Monadical](https://monadical.com) building [OddSlingers Poker](https://labs.oddslingers.com)

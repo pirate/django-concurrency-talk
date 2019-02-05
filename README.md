@@ -140,4 +140,4 @@ If you want to learn more about Django, databases, concurrency and data integrit
     - [https://2017.djangocon.us/talks/taking-django-distributed/](https://2017.djangocon.us/talks/taking-django-distributed/)
     - [https://speakerdeck.com/andrewgodwin/scaling-django-with-distributed-systems](https://speakerdeck.com/andrewgodwin/scaling-django-with-distributed-systems)
 
-If any of these links are broken, check https://archive.sweeitng.me for mirror copies.
+If any of these links are broken, check https://archive.sweeting.me for mirror copies.

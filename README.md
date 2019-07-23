@@ -14,10 +14,11 @@ Co-Founder @ Monadical, a startup based in Medellin, Colombia and Montreal, Cana
 ---
 
 <div style="text-align:center">
-    <a href="https://pirate.github.io/django-concurrency-talk/slides.pdf">
+    <a href="https://www.youtube.com/watch?v=rrlXAU-FGTo">
         <img src="https://i.imgur.com/Cm6Q2zX.jpg" alt="First slide of talk" width="500px">
      </a>
 </div>
+<a href="https://www.youtube.com/watch?v=rrlXAU-FGTo">Video (YouTube)</a>, <a href="https://pirate.github.io/django-concurrency-talk/slides.pdf">Slides (PDF)</a>
 
 `#pyconco2019` `#pygotham2018` `#python` `#django` `#distributed-systems` `#concurrency` `#databases`
 

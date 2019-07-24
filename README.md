@@ -92,6 +92,30 @@ I also love learning about distributed systems and doing security activism, you 
 
 ## Addendum
 
+### Timestamp Accuraccy
+
+One thing I wish I spent more time on in the talk is the importantce of timestamp accuracy.  Putting all your db writes in a queue with timestamps is not nearly enough in a distributed system to guarantee serializability with globally correct ordering, you also need to guarantee the timestamps are monotonically increasing and ordered across all servers (which means using atomic clocks or requesting them from a central counter/timestamp server instead of generating them locally and relying on NTP).
+
+### Decimal isn't perfect
+
+`Decimal` isn't actually enough for many use cases.
+
+```python
+>>>from decimal import Decimal
+>>>Decimal(0.1)
+Decimal('0.1000000000000000055511151231257827021181583404541015625')
+```
+
+For perfect precision even with infinitely repeating or sub-0 amounts, you'll want to use `from fractions import Fraction` instead.
+
+```python
+>>>from fractions import Fraction
+>>>Fraction(1) / Fraction(10)
+Fraction(1, 10)
+```
+
+### SQL Gap-Locking
+
 One thing I didn't cover in the talk is that SQL can do something called "[gap locking](https://www.percona.com/blog/2012/03/27/innodbs-gap-locks/)".  That is if you have an index for a given column, and you perform a `.select_for_update()` with a filter, it won't just lock the rows that match the filter, it will actually prevent any new rows from being added that match the filter while the lock is held, which lets you effectively lock append-only tables without needing to lock the entire table.
 
 (Thanks to Sam Kimbrel for telling me about this feature in the hall after the talk)

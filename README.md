@@ -100,7 +100,7 @@ One thing I wish I spent more time on in the talk is the importantce of timestam
 
 #### Why floats are bad
 
-Native Python math behavior with `float`s and `int`s is intuitive, but can be dangerous for money
+‼️ Native Python math behavior with `float`s and `int`s is intuitive, but can be dangerous for money
 because it hides the effects of imperfect precision from the programmer.
 
 ```python
@@ -114,7 +114,7 @@ Decimal('33.3333333333333285963817615993320941925048828125')  # Not the number y
 
 #### Instantiating `Decimal`s with `float`s by accident
 
-When defining literal `Decimal`s, you **must pass a string literal**, otherwise it gets interpreted as a `float` first (which breaks the whole point of using `Decimal`).
+⚠️ When defining literal `Decimal`s, you **must pass a string literal**, otherwise it gets interpreted as a `float` first (which breaks the whole point of using `Decimal`).
 
 ```python
 >>> from decimal import Decimal
@@ -125,7 +125,7 @@ Decimal('0.1')
 ```
 #### Irrational Numbers (aka infinite decimals)
 
-If you need to represent an infinitely repeating decimal like `33.333333...%` or something like Pi `3.141...`, `Decimal` is not enough because it cannot store an infinite number of digits.  
+ℹ️ If you need to represent an infinitely repeating decimal like `33.333333...%` or something like Pi `3.141...`, `Decimal` is not enough because it cannot store an infinite number of digits.  
 For perfect precision when dealing with fractional values, you'll want to use `from fractions import Fraction` instead.
 
 ```python
@@ -164,13 +164,13 @@ to developers that it's correct and precsice, but in reality it's hiding float e
 Decimal('33.3333333333333285963817615993320941925048828125')  # error can be revealed with Decimal
 ```
 
-**The correct apporach with `Decimal`:**  (don't use with irrational numbers / infinite decimals)
+✅ **The correct apporach with `Decimal`:**  (don't use with irrational numbers / infinite decimals)
 ```python
 >>> (Decimal(1) / Decimal(3)) * Decimal(100)
 Decimal('33.33333333333333333333333333')      # Note this does not store infinite precision unlike Fraction, but it will provide correct results up to the Decimal precision limit
 ``` 
 
-**The correct apporach with `Fraction`:** (safe for irrational numbers / infinite decimals)
+✅ **The correct apporach with `Fraction`:** (safe for irrational numbers / infinite decimals)
 ```python
 >>> frac = (Fraction(1) / Fraction(3)) * Fraction(100)
 >>> frac

@@ -102,8 +102,8 @@ One thing I wish I spent more time on in the talk is the importantce of timestam
 
 Native Python math behavior with `float`s and `int`s is intuitive, but can be dangerous for money
 because it hides the effects of imperfect precision from the programmer.
-```python
 
+```python
 >>> (1/3) * 100
 33.33333333333333
 >>> (1/3) * 100.0
@@ -114,7 +114,7 @@ Decimal('33.3333333333333285963817615993320941925048828125')  # Not the number y
 
 #### Instantiating `Decimal`s with `float`s by accident
 
-When defining literal `Decimal`s, you **must** pass a string, otherwise it gets converted to a float first which breaks the whole point of using `Decimal`.
+When defining literal `Decimal`s, you **must pass a string literal**, otherwise it gets interpreted as a `float` first (which breaks the whole point of using `Decimal`).
 
 ```python
 >>> from decimal import Decimal
@@ -136,20 +136,21 @@ Fraction(1, 3)
 
 #### Implicit type conversion during match
 
-Don't multiply `Decimal('0.3') * 100`, do `Decimal('0.3') * Decimal('100') instead.
+⚠️ Watch out for implicit type conversion when doing math with `Decimal` and `Fraction` values.  
+Make sure **all** values in math operations are `Decimal`s or `Fraction`s to maintain perfect precision.  
 
-Watch out for implicit type conversion when doing math with `Decimal` and `Fraction` values.  Make sure **all** values in math operations are `Decimal`s or `Fraction`s to maintain perfect precision.  
+Don't multiply `Decimal('0.3') * 100`, do `Decimal('0.3') * Decimal('100')` instead.
 
-Fraction math behavior with mixed types is not intuitive because of differening behavior
+This even more true when using `Fraction`. The result from mixed type math is not intuitive because of differening behavior
 depending on which implicit type conversion takes place.
   
 A naive implementation might try to do simple math `Fraction` and `int` (different types), but not 
 only is the final value produced incorrect, the intermediate result of the multiplication before it's 
 converted to float is actually stored incorrectly as well.  
   
-this is subtle and extremely dangerous, because Fraction will blindly store the imperfect result of 
-the bad multiplication with perfect precision, and  the type of the final value `Fraction` will imply 
-it's correct and precsice, hiding the float error that was produced in the middle step.
+This type of bug is subtle and extremely dangerous, because `Fraction` will blindly store the imperfect result of 
+the multiplication with perfect precision. The type of the final value `Fraction` will imply 
+to developers that it's correct and precsice, but in reality it's hiding float error that was introduced in an intermediate step that involved implicit type conversion.
 
 ```python
 # implicit type conversion, even with simple ints ruins precision and introduces error

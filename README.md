@@ -134,7 +134,7 @@ For perfect precision when dealing with fractional values, you'll want to use `f
 Fraction(1, 3)
 ```
 
-#### ⚠️ Implicit type conversion during match
+#### ⚠️ Implicit type conversion during math
 
 Watch out for implicit type conversion when doing math with `Decimal` and `Fraction` values.  
 Make sure **all** values in math operations are `Decimal`s or `Fraction`s to maintain perfect precision.  

@@ -96,23 +96,88 @@ I also love learning about distributed systems and doing security activism, you 
 
 One thing I wish I spent more time on in the talk is the importantce of timestamp accuracy.  Putting all your db writes in a queue with timestamps is not nearly enough in a distributed system to guarantee serializability with globally correct ordering, you also need to guarantee the timestamps are monotonically increasing and ordered across all servers (which means using atomic clocks or requesting them from a central counter/timestamp server instead of generating them locally and relying on NTP).
 
-### Decimal isn't perfect
+### More on Decimal
 
-`Decimal` isn't actually enough for many use cases.
+#### Why floats are bad
+
+Native Python math behavior with `float`s and `int`s is intuitive, but can be dangerous for money
+because it hides the effects of imperfect precision from the programmer.
+```python
+
+>>> (1/3) * 100
+33.33333333333333
+>>> (1/3) * 100.0
+33.33333333333333
+>>> Decimal((1/3) * 100)
+Decimal('33.3333333333333285963817615993320941925048828125')  # Not the number you though you had, eh?
+```
+
+#### Instantiating `Decimal`s with `float`s by accident
+
+When defining literal `Decimal`s, you **must** pass a string, otherwise it gets converted to a float first which breaks the whole point of using `Decimal`.
 
 ```python
->>>from decimal import Decimal
->>>Decimal(0.1)
+>>> from decimal import Decimal
+>>> Decimal(0.1)    # bad
 Decimal('0.1000000000000000055511151231257827021181583404541015625')
+>>> Decimal('0.1')  # good
+Decimal('0.1')
 ```
+#### Irrational Numbers (aka infinite decimals)
 
-For perfect precision even with infinitely repeating or sub-0 amounts, you'll want to use `from fractions import Fraction` instead.
+If you need to represent an infinitely repeating decimal like `33.333333...%` or something like Pi `3.141...`, `Decimal` is not enough because it cannot store an infinite number of digits.  
+For perfect precision when dealing with fractional values, you'll want to use `from fractions import Fraction` instead.
 
 ```python
->>>from fractions import Fraction
->>>Fraction(1) / Fraction(10)
-Fraction(1, 10)
+>>> from fractions import Fraction
+>>> Fraction(1) / Fraction(3)
+Fraction(1, 3)
 ```
+
+#### Implicit type conversion during match
+
+Don't multiply `Decimal('0.3') * 100`, do `Decimal('0.3') * Decimal('100') instead.
+
+Watch out for implicit type conversion when doing math with `Decimal` and `Fraction` values.  Make sure **all** values in math operations are `Decimal`s or `Fraction`s to maintain perfect precision.  
+
+Fraction math behavior with mixed types is not intuitive because of differening behavior
+depending on which implicit type conversion takes place.
+  
+A naive implementation might try to do simple math `Fraction` and `int` (different types), but not 
+only is the final value produced incorrect, the intermediate result of the multiplication before it's 
+converted to float is actually stored incorrectly as well.  
+  
+this is subtle and extremely dangerous, because Fraction will blindly store the imperfect result of 
+the bad multiplication with perfect precision, and  the type of the final value `Fraction` will imply 
+it's correct and precsice, hiding the float error that was produced in the middle step.
+
+```python
+# implicit type conversion, even with simple ints ruins precision and introduces error
+>>> float((Fraction(1) / Fraction(3)) * 100)
+33.333333333333336
+
+# don't try to fix this with float, it's secretly hiding the precision error instead of handling it properly
+>>> float((Fraction(1) / Fraction(3)) * 100.0)
+33.33333333333333
+>>> Decimal((Fraction(1) / Fraction(3)) * 100.0
+Decimal('33.3333333333333285963817615993320941925048828125')  # error can be revealed with Decimal
+```
+
+**The correct apporach with `Decimal`:**  (don't use with irrational numbers / infinite decimals)
+```python
+>>> (Decimal(1) / Decimal(3)) * Decimal(100)
+Decimal('33.33333333333333333333333333')      # Note this does not store infinite precision unlike Fraction, but it will provide correct results up to the Decimal precision limit
+``` 
+
+**The correct apporach with `Fraction`:** (safe for irrational numbers / infinite decimals)
+```python
+>>> frac = (Fraction(1) / Fraction(3)) * Fraction(100)
+>>> frac
+Fraction(100, 3)                                # this is both stored and displayed correclty with infinite precision, unlike Decimal
+
+>>> frac.numerator / Decimal(frac.denominator)  # if you want to get the value as a Decimal (correctly stored and displayed up to the Decimal precision limit)
+Decimal('33.33333333333333333333333333')
+``` 
 
 ### SQL Gap-Locking
 

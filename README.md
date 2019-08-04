@@ -164,7 +164,7 @@ to developers that it's correct and precsice, but in reality it's hiding float e
 Decimal('33.3333333333333285963817615993320941925048828125')  # error can be revealed with Decimal
 ```
 
-##### ✅ The correct apporach with `Decimal`
+##### ✅ The correct approach with `Decimal`
 
 (don't use this for irrational numbers / infinite decimals)
 ```python
@@ -172,7 +172,7 @@ Decimal('33.3333333333333285963817615993320941925048828125')  # error can be rev
 Decimal('33.33333333333333333333333333')      # Note this does not store infinite precision unlike Fraction, but it will provide correct results up to the Decimal precision limit
 ``` 
 
-##### ✅ The correct apporach with `Fraction` 
+##### ✅ The correct approach with `Fraction` 
 
 (safe for irrational numbers / infinite decimals)
 ```python
@@ -186,6 +186,22 @@ If you want to get the value as a Decimal (correctly stored and displayed up to 
 >>> frac.numerator / Decimal(frac.denominator)  # Ininite precision is not maintianed when converting, but this lets you display it as a correct finite Decimal up it's precision limit
 Decimal('33.33333333333333333333333333')
 ``` 
+
+##### ✅ The correct approach with a custom `SafeNumber` type
+
+I've created a small class that implements the `Fraction` interface, but guards against implicit type conversion when doing math or comparisons.
+
+```python
+>>> from safe_number import SafeNumber
+>>> Fraction(10) == 10.0000000000000001
+True
+>>> SafeNumber(10) == 10.0000000000000001
+Traceback (most recent call last):
+...
+TypeError: Invalid operand type, operands can only be of type Union[int, str, Fraction, Decimal, SafeNumber]
+```
+
+**The source for `SafeNumber` can be found here: [`safe_number.py`](https://gist.github.com/pirate/cc8e770eaf1ddb346d72e2e2c406c077).**
 
 ### SQL Gap-Locking
 

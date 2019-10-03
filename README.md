@@ -5,7 +5,7 @@
 
 Speaker Info: [Nick Sweeting](https://nicksweeting.com) | [@theSquashSH](https://twitter.com/theSquashSH) on Twitter | [@pirate](https://github.com/pirate) on Github | [LinkedIn](https://www.linkedin.com/in/nick-sweeting-430999b3/)  
 Co-Founder @ Monadical, a startup based in Medellin, Colombia and Montreal, Canada with remote employees around the world ([we're hiring!](https://monadical.com/apply)).  
-[Monadical](https://monadical.com) works on archiving the internet and making Esports more engaging by building [OddSlingers Poker](https://labs.oddslingers.com).
+[Monadical](https://monadical.com) is our software development shop doing full-stack development work for a variety of clients.
 
 <a href="https://www.youtube.com/watch?v=VJSznZMvA1M"><img src="https://img.shields.io/badge/Watch-YouTube-red.svg?style=flat"/></a>
 <a href="https://twitter.com/thesquashSH"><img src="https://img.shields.io/badge/Tweet-%40theSquashSH-lightblue.svg?style=flat"/></a>

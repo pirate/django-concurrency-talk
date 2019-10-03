@@ -22,7 +22,7 @@ Co-Founder @ Monadical, a startup based in Medellin, Colombia and Montreal, Cana
 
 `#pyconco2019` `#pygotham2018` `#python` `#django` `#distributed-systems` `#concurrency` `#databases`
 
-(sorry for the overused "how I learned..." title)
+Sorry for the overused "How I learned I learned to stop worrying and love x" title, I'm cringing pretty hard at it in hindsight... definitely should've spent another 20min thinking of a better title.
 
 ## Events & Video
 

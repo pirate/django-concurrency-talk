@@ -255,3 +255,6 @@ If you want to learn more about Django, databases, concurrency and data integrit
     - [https://speakerdeck.com/andrewgodwin/scaling-django-with-distributed-systems](https://speakerdeck.com/andrewgodwin/scaling-django-with-distributed-systems)
 
 If any of these links are broken, check https://archive.sweeting.me for mirror copies.
+
+
+<sup>No one has pointed these out yet, but I cringe hearing these in the videos so I'm putting corrections here to ease my conscience: "guys" -> "folks", "he'll review" -> "they'll review", "timestamps are hard" -> "timestamps are *really* hard"!.</sup>

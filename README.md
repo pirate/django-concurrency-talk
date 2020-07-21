@@ -26,7 +26,7 @@ Sorry for the overused "How I learned I learned to stop worrying and love x" tit
 
 ## Events & Video
 
-- [**PyCon Colombia 2019**](https://www.pycon.co/en/talks/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges/) @ Pontifical Xavierian University on 2019/04/08  
+- [**PyCon Colombia 2019**](https://2019.pycon.co/en/talks/how-i-learned-to-stop-worrying-and-love-atomic-banking-blunders-and-concurrency-challenges/) @ Pontifical Xavierian University on 2019/04/08  
   Video: https://www.youtube.com/watch?v=rrlXAU-FGTo
 
 - **[Django-NYC](https://www.meetup.com/nycpython/events/255468112/) & [NYC-Python](https://www.meetup.com/nycpython/events/255468112/) Talk Night** @ thelab NYC on 2018/10/25  

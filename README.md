@@ -187,7 +187,7 @@ Decimal('33.33333333333333333333333333')
 
 ##### ✅ The correct approach with a custom `SafeNumber` type
 
-I've created a small class that implements the `Fraction` interface, but guards against implicit type conversion when doing math or comparisons.
+I've created a small class that implements the `Fraction` interface, but guards against implicit type conversion when doing math or comparisons (only when it's actually dangerous).
 
 ```python
 >>> from safe_number import SafeNumber
@@ -197,6 +197,10 @@ True
 Traceback (most recent call last):
 ...
 TypeError: Invalid operand type, operands can only be of type Union[int, str, Fraction, Decimal, SafeNumber]
+>>> SafeNumber(10) == SafeNumber(10)
+True
+>>> SafeNumber(10) == 10
+True
 ```
 
 **The source for `SafeNumber` can be found here: [`safe_number.py`](https://gist.github.com/pirate/cc8e770eaf1ddb346d72e2e2c406c077).**

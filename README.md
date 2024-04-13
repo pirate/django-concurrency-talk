@@ -78,13 +78,13 @@ Did you know every Django app is already a distributed system, even when it’s 
 
 This talk expects a basic familiarity with the Django ORM, but doesn’t require that people know about transactions, atomicity, distributed SQL, or any of the other nitty-gritty details. I’m going to be giving many examples to illustrate each bug, and talk about the real-world effects. I expect beginners and advanced Django users will all learn at least 1 new thing in this talk, but it’s primarily aimed at intermediate developers who are new to thinking about modeling concurrency and distributed systems.
 
-I’ve previously given lighting talks and spoken publicly about a wide range of technical topics at meetups in NYC, SF, Medellin, and Shanghai. I’m giving this talk as the CTO of Monadical (https://monadical.com), where we do real-time poker (and side-betting, on the blockchain, woo buzzwords!). We’ve learned tons of lessons over the last two years working with django, django-channels, React/Redux, and sensitive financial data, and we hope to share plenty of fun stories about the poker world, and about building real-time systems in django!
+My past talks have generally focused on Python, Web Development, and Security, and I've given talks mostly in NYC, SF, Medellin, and Shanghai. I’m giving this talk now as the CTO of Monadical, a Python-focused software consultancy based in Montreal (https://monadical.com). We’ve learned tons of lessons over the last two years working with django, django-channels, React/Redux, and sensitive financial data, and we hope to share plenty of fun stories about the poker world, and about building real-time systems in django!
 
-I gave this talk at PyGotham 2018 recently, but I’ve since added significant improvements and new slides after speaking with several advanced Django users in the audience.
+After giving this talk at PyGotham 2018, I made several improvements and changes after speaking with with a few helpful Django devs in the audience!
 
 ## Speaker Bio
 
-I dropped out of high school in Shanghai to start coding, and have been founding and working at startups in San Francisco, Portland, Montreal, and NYC ever since.  I've been working with Django since my first under-the-table gig for a Shanghainese food-delivery startup, but have carried those skills with me from the healthcare and agriculture industries, to now the online gaming and blockchain worlds by cofounding a poker startup in Medellín called OddSlingers.  I love making mistakes and asking stupid questions, it's the best way to learn!
+I dropped out of high school in Shanghai to start coding, and I've been working with Django since my first under-the-table gig for a Shanghainese food-delivery startup. I've carried those skills with me from the healthcare and agriculture industries, to now the online gaming and blockchain worlds by cofounding a poker startup in Medellín called OddSlingers.  I love making mistakes and asking stupid questions, it's the best way to learn!
 
 I also love learning about distributed systems and doing security activism, you may have heard of me as the "Equifax guy" who made the NYTimes for creating a hoax phishing site that Equifax accidentally linked millions of customers to.
 

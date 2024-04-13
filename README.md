@@ -10,7 +10,7 @@
 <a href="https://github.com/pirate/django-concurrency-talk"><img src="https://img.shields.io/github/stars/pirate/django-concurrency-talk.svg?style=flat&label=Star+on+Github"/></a>
 
 ---
-
+x
 <div style="text-align:center">
     <a href="https://www.youtube.com/watch?v=rrlXAU-FGTo">
         <img src="https://i.imgur.com/Cm6Q2zX.jpg" alt="First slide of talk" width="500px">
@@ -207,7 +207,7 @@ True
 
 ### SQL Gap-Locking
 
-One thing I didn't cover in the talk is that SQL can do something called "[gap locking](https://www.percona.com/blog/2012/03/27/innodbs-gap-locks/)".  That is if you have an index for a given column, and you perform a `.select_for_update()` with a filter, it won't just lock the rows that match the filter, it will actually prevent any new rows from being added that match the filter while the lock is held, which lets you effectively lock append-only tables without needing to lock the entire table.
+One thing I didn't cover in the talk is that SQL can do something called "[gap locking](https://www.percona.com/blog/2012/03/27/innodbs-gap-locks/)".  That is if you have an index for a given column, and you perform a `.select_for_update()` with a filter, it won't just lock the rows that match the filter, it will actually prevent any new rows from being added that match the filter while the lock is held, which lets you effectively lock append-only tables without needing to lock the entire table. Not all dabases support gap-locking through, make sure to check yours!
 
 (Thanks to Sam Kimbrel for telling me about this feature in the hall after the talk)
 

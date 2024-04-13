@@ -3,9 +3,9 @@
 *AKA: How I Learned to Stop Worrying and Love atomic(): Banking Blunders and Concurrency Challenges*  
 **How to deal with concurrency, money, and log-structured data in the Django ORM**
 
-Speaker Info: [Nick Sweeting](https://nicksweeting.com) | [@theSquashSH](https://twitter.com/theSquashSH) on Twitter | [@pirate](https://github.com/pirate) on Github | [LinkedIn](https://www.linkedin.com/in/nick-sweeting-430999b3/)  
-Co-Founder @ Monadical, a startup based in Medellin, Colombia and Montreal, Canada with remote employees around the world ([we're hiring!](https://monadical.com/apply)).  
-[Monadical](https://monadical.com) is our software development shop doing full-stack development work for a variety of clients.
+> About Me: [Nick Sweeting](https://nicksweeting.com) | Twitter: [@theSquashSH](https://twitter.com/theSquashSH) | Github: [@pirate](https://github.com/pirate) | [LinkedIn](https://www.linkedin.com/in/nick-sweeting-430999b3/)  
+> I learned these lessons at Monadical, a software consultancy I helped co-found in Montreal. We work on these types of problems daily, and we're hiring engineers all over the world ([apply here](https://monadical.com/apply) or [work with us](https://monadical.com).  
+> We provide full-stack software development, AI-focused angel investing, and CTO-as-a-service work for a wide variety of industries.
 
 <a href="https://www.youtube.com/watch?v=VJSznZMvA1M"><img src="https://img.shields.io/badge/Watch-YouTube-red.svg?style=flat"/></a>
 <a href="https://twitter.com/thesquashSH"><img src="https://img.shields.io/badge/Tweet-%40theSquashSH-lightblue.svg?style=flat"/></a>

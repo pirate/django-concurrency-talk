@@ -20,7 +20,7 @@
 
 `#pyconco2019` `#pygotham2018` `#python` `#django` `#distributed-systems` `#concurrency` `#databases`
 
-Sorry for the overused "How I learned I learned to stop worrying and love x" title, I'm cringing pretty hard at it in hindsight... definitely should've spent another 20min thinking of a better title.
+*Sorry for the "How I learned I learned to stop worrying and love x" title! I love the movie but the format is more over-used than I realized...*
 
 ## Events & Video
 

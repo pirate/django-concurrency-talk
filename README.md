@@ -250,6 +250,7 @@ If you want to learn more about Django, databases, concurrency and data integrit
 - https://milestone.topics.it/2023/01/19/pitfalls-of-request-response-over-messaging.html
 - https://brandur.org/soft-deletion
 - https://www.ietf.org/archive/id/draft-peabody-dispatch-new-uuid-format-01.html
+- https://blog.ploeh.dk/2024/06/03/youll-regret-using-natural-keys/
 
 ### Distributed Systems
 

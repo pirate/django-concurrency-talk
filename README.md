@@ -235,29 +235,91 @@ Gap locking only works on columns that are indexed (all columns must be indexed 
 
 If you want to learn more about Django, databases, concurrency and data integrity, check out these talks and articles that go into more depth.
 
-* Articles
-    - https://wiki.postgresql.org/wiki/Value_locking
-    - https://www.postgresql.org/docs/9.4/explicit-locking.html
-    - https://github.com/Xof/django-pglocks
-    - [https://labs.oddslingers.com/posts/Designing-A-Banking-System.html](https://labs.oddslingers.com/posts/Designing-A-Banking-System.html)
-    - [https://medium.com/@hakibenita/how-to-manage-concurrency-in-django-models-b240fed4ee2](https://medium.com/@hakibenita/how-to-manage-concurrency-in-django-models-b240fed4ee2)
-    - [https://blogs.oracle.com/oraclemagazine/on-transaction-isolation-levels](https://blogs.oracle.com/oraclemagazine/on-transaction-isolation-levels)
-    - [https://jepsen.io/consistency](https://jepsen.io/consistency)
-    - [https://medium.com/abrai/demystifying-consistency-and-isolation-for-a-distributed-systems-engineer-64a064c52f6e](https://medium.com/abrai/demystifying-consistency-and-isolation-for-a-distributed-systems-engineer-64a064c52f6e)
-    - [https://medium.com/@tylerneely/fear-and-loathing-in-lock-free-programming-7158b1cdd50c](https://medium.com/@tylerneely/fear-and-loathing-in-lock-free-programming-7158b1cdd50c)
-    - [https://github.com/danluu/post-mortems](https://github.com/danluu/post-mortems)
-    - [https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
-    - [https://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza/](https://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza/)
-    - [https://archive.sweeting.me/archive/1536044832/docs.djangoproject.com/en/2.1/topics/db/optimization.html](https://archive.sweeting.me/archive/1536044832/docs.djangoproject.com/en/2.1/topics/db/optimization.html)
-    - [https://archive.sweeting.me/archive/1510783392/fauna.com/blog/consistent-transactions-in-a-globally-distributed-database.html](https://archive.sweeting.me/archive/1510783392/fauna.com/blog/consistent-transactions-in-a-globally-distributed-database.html)
-    - [https://medium.com/@roman01la/on-web-apps-and-databases-c026f77b93f4](https://medium.com/@roman01la/on-web-apps-and-databases-c026f77b93f4)
-    - [martin.kleppmann.com/2015/05/11/please-stop-calling-databases-cp-or-ap.html](http://martin.kleppmann.com/2015/05/11/please-stop-calling-databases-cp-or-ap.html)
 
-* Talks
-    - [https://pyvideo.org/pybay-2016/django-channels-and-distributed-systems.html](https://pyvideo.org/pybay-2016/django-channels-and-distributed-systems.html)
-    - [https://reinout.vanrees.org/weblog/2014/05/13/distributed-systems.html](https://reinout.vanrees.org/weblog/2014/05/13/distributed-systems.html)
-    - [https://2017.djangocon.us/talks/taking-django-distributed/](https://2017.djangocon.us/talks/taking-django-distributed/)
-    - [https://speakerdeck.com/andrewgodwin/scaling-django-with-distributed-systems](https://speakerdeck.com/andrewgodwin/scaling-django-with-distributed-systems)
+<br/>
+
+## Further Reading
+
+
+### Data Models
+
+- https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying
+- https://substack.wasteman.codes/p/engineering-principles-and-best-practices
+- https://www.etsy.com/codeascraft/the-problem-with-timeseries-data-in-machine-learning-feature-systems
+- https://monadical.com/posts/from-firebase-to-django.html
+- https://milestone.topics.it/2023/01/19/pitfalls-of-request-response-over-messaging.html
+- https://brandur.org/soft-deletion
+- https://www.ietf.org/archive/id/draft-peabody-dispatch-new-uuid-format-01.html
+
+### Distributed Systems
+
+- https://architecturenotes.co/p/fallacies-of-distributed-systems
+- https://muratbuffalo.blogspot.com/2021/02/foundational-distributed-systems-papers.html
+- https://ferd.ca/a-distributed-systems-reading-list.html
+- https://bravenewgeek.com/you-cannot-have-exactly-once-delivery/
+- https://www.figma.com/blog/how-figma-scaled-to-multiple-databases/
+- https://blog.jim-nielsen.com/2023/offline-is-online-with-extreme-latency/
+- https://www.exhypothesi.com/clocks-and-causality/
+- https://docs.monadical.com/s/demystifying-databases
+- https://planetscale.com/blog/what-is-database-sharding-and-how-does-it-work
+- https://www.cockroachlabs.com/blog/raft-is-so-fetch/
+- https://dbmsmusings.blogspot.com/2019/07/overview-of-consistency-levels-in.html
+- http://webdam.inria.fr/Alice/
+- https://jepsen.io/analyses
+- https://github.blog/2021-04-05-how-we-scaled-github-api-sharded-replicated-rate-limiter-redis/
+- https://www.figma.com/blog/making-multiplayer-more-reliable/
+- https://www.binwang.me/2020-11-02-Use-TLA+-to-Verify-Cache-Consistency.html
+
+### SQLite
+
+- https://github.com/rqlite/rqlite
+- https://www.sqlite.org/lockingv3.html
+- https://www.sqlite.org/np1queryprob.html
+
+### Postgres
+
+- https://supabase.com/blog/choosing-a-postgres-primary-key
+- https://www.infoq.com/articles/wonders-of-postgres-logical-decoding-messages/
+- https://www.2ndquadrant.com/en/blog/what-is-select-skip-locked-for-in-postgresql-9-5/
+- https://gds.blog.gov.uk/2024/01/17/how-we-migrated-our-postgresql-database-with-11-seconds-downtime/
+- https://www.cybertec-postgresql.com/en/column-order-in-postgresql-does-matter/
+- https://mastermind.dev/articles/indexes-in-postgresql
+- https://www.dylanpaulus.com/posts/postgres-is-a-graph-database/
+- https://wiki.postgresql.org/wiki/Value_locking
+- https://www.postgresql.org/docs/9.4/explicit-locking.html
+- https://github.com/Xof/django-pglocks
+
+### File Systems
+
+- https://puzpuzpuz.dev/the-secret-life-of-fsync
+- https://lwn.net/Articles/752063/
+- https://danluu.com/file-consistency/
+- https://github.com/ligurio/unreliablefs
+- https://bun.uptrace.dev/postgres/tuning-zfs-aws-ebs.html
+
+### Related Talks
+
+- [https://pyvideo.org/pybay-2016/django-channels-and-distributed-systems.html](https://pyvideo.org/pybay-2016/django-channels-and-distributed-systems.html)
+- [https://reinout.vanrees.org/weblog/2014/05/13/distributed-systems.html](https://reinout.vanrees.org/weblog/2014/05/13/distributed-systems.html)
+- [https://2017.djangocon.us/talks/taking-django-distributed/](https://2017.djangocon.us/talks/taking-django-distributed/)
+- [https://speakerdeck.com/andrewgodwin/scaling-django-with-distributed-systems](https://speakerdeck.com/andrewgodwin/scaling-django-with-distributed-systems)
+
+### More Links
+
+- [https://labs.oddslingers.com/posts/Designing-A-Banking-System.html](https://labs.oddslingers.com/posts/Designing-A-Banking-System.html)
+- [https://medium.com/@hakibenita/how-to-manage-concurrency-in-django-models-b240fed4ee2](https://medium.com/@hakibenita/how-to-manage-concurrency-in-django-models-b240fed4ee2)
+- [https://blogs.oracle.com/oraclemagazine/on-transaction-isolation-levels](https://blogs.oracle.com/oraclemagazine/on-transaction-isolation-levels)
+- [https://jepsen.io/consistency](https://jepsen.io/consistency)
+- [https://medium.com/abrai/demystifying-consistency-and-isolation-for-a-distributed-systems-engineer-64a064c52f6e](https://medium.com/abrai/demystifying-consistency-and-isolation-for-a-distributed-systems-engineer-64a064c52f6e)
+- [https://medium.com/@tylerneely/fear-and-loathing-in-lock-free-programming-7158b1cdd50c](https://medium.com/@tylerneely/fear-and-loathing-in-lock-free-programming-7158b1cdd50c)
+- [https://github.com/danluu/post-mortems](https://github.com/danluu/post-mortems)
+- [https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
+- [https://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza/](https://www.confluent.io/blog/turning-the-database-inside-out-with-apache-samza/)
+- [https://archive.sweeting.me/archive/1536044832/docs.djangoproject.com/en/2.1/topics/db/optimization.html](https://archive.sweeting.me/archive/1536044832/docs.djangoproject.com/en/2.1/topics/db/optimization.html)
+- [https://archive.sweeting.me/archive/1510783392/fauna.com/blog/consistent-transactions-in-a-globally-distributed-database.html](https://archive.sweeting.me/archive/1510783392/fauna.com/blog/consistent-transactions-in-a-globally-distributed-database.html)
+- [https://medium.com/@roman01la/on-web-apps-and-databases-c026f77b93f4](https://medium.com/@roman01la/on-web-apps-and-databases-c026f77b93f4)
+- [martin.kleppmann.com/2015/05/11/please-stop-calling-databases-cp-or-ap.html](http://martin.kleppmann.com/2015/05/11/please-stop-calling-databases-cp-or-ap.html)
+
 
 If any of these links are broken, check https://archive.sweeting.me for mirror copies.
 
